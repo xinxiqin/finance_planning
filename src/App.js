@@ -5,10 +5,13 @@ function App() {
     <div className="App">
       <header className="App-header">
         <p>
-          finance planning by Xinxi Qin
+          finance planning 
         </p>
 
       </header>
+      <p>
+          finance planning by Xinxi Qin
+      </p>
     </div>
   );
 }
