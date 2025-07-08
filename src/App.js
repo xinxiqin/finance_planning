@@ -1,98 +1,82 @@
 import './App.css';
 import React, { useState } from "react";
 
-function App() {
-    const [activeTab, setActiveTab] = useState("home");
+const menuData = [
+  {
+    title: "Health",
+    submenus: [
+      {
+        title: "Exercise",
+        items: [
+          { label: "Cardio", content: "🏃 Do cardio 3–5 times/week." },
+          { label: "Strength", content: "🏋️ Lift weights for muscle." },
+        ],
+      },
+      {
+        title: "Nutrition",
+        items: [
+          { label: "Vitamins", content: "🍎 Eat a variety of fruits & veggies." },
+          { label: "Hydration", content: "💧 Drink enough water daily." },
+        ],
+      },
+    ],
+  },
+  {
+    title: "Wealth",
+    submenus: [
+      {
+        title: "Investing",
+        items: [
+          { label: "Stocks", content: "📈 Long-term growth with equity." },
+          { label: "Bonds", content: "📊 Stability with fixed income." },
+        ],
+      },
+      {
+        title: "Saving",
+        items: [
+          { label: "Emergency Fund", content: 
+            "<p>Save 3–6 months of expenses.</p> \n<p> Build a financial cushion. </p>" },
 
-  const renderContent = () => {
-    switch (activeTab) {
-      case "tax":
-        return (
-          <div>
-            <p>Tax Gain Harvest</p>
-            <p>Retirement Account Withdraw Optimization</p>
-          </div>
-        );
-      case "housing":
-        return <div>
-          <p>Housing Market Analysis</p>
-          <p>Mortgage Rate Trends</p>
-        </div>;
-      case "car":
-        return <div>
-          <p>Car Loan Interest Rates</p>
-          <p>Electric Vehicle Incentives</p>
-        </div>;
-      default:
-        return null;
-    }
-  };
+          { label: "Retirement", content: "🏖️ Max your Roth IRA and 401(k)." },
+        ],
+      },
+    ],
+  },
+];
+
+function App() {
+ const [selectedContent, setSelectedContent] = useState("Please select a topic.");
 
   return (
-    <div style={styles.container}>
-      <h1>Finance Planning Topics</h1>
-      <div style={styles.tabBar}>
-        <button
-          onClick={() => setActiveTab("tax")}
-          style={activeTab === "tax" ? styles.activeTab : styles.tab}
-        >
-          Tax
-        </button>
-        <button
-          onClick={() => setActiveTab("housing")}
-          style={activeTab === "housing" ? styles.activeTab : styles.tab}
-        >
-          Housing
-        </button>
-        <button
-          onClick={() => setActiveTab("car")}
-          style={activeTab === "car" ? styles.activeTab : styles.tab}
-        >
-          Car
-        </button>
+    <div className="app-container">
+      <div className="sidebar">
+        {menuData.map((category) => (
+          <div key={category.title} className="menu-category">
+            <h3>{category.title}</h3>
+            {category.submenus.map((submenu) => (
+              <div key={submenu.title} className="submenu-group">
+                <strong>{submenu.title}</strong>
+                <ul>
+                  {submenu.items.map((item) => (
+                    <li key={item.label}>
+                      <button onClick={() => setSelectedContent(item.content)}>
+                        {item.label}
+                      </button>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        ))}
       </div>
-      <div style={styles.content}>{renderContent()}</div>
+      <div className="content">
+        <h2>Content</h2>
+        <p>{selectedContent}</p>
+      </div>
     </div>
   );
 };
 
-// Simple inline styles
-const styles = {
-  container: {
-    fontFamily: "Arial, sans-serif",
-    margin: "50px auto",
-    maxWidth: "600px",
-    padding: "20px",
-    border: "1px solid #ddd",
-    borderRadius: "8px",
-    boxShadow: "0 2px 10px rgba(0,0,0,0.1)",
-  },
-  tabBar: {
-    display: "flex",
-    gap: "10px",
-    marginBottom: "20px",
-  },
-  tab: {
-    padding: "10px 20px",
-    cursor: "pointer",
-    backgroundColor: "#f0f0f0",
-    border: "none",
-    borderRadius: "4px",
-  },
-  activeTab: {
-    padding: "10px 20px",
-    cursor: "pointer",
-    backgroundColor: "#4CAF50",
-    color: "#fff",
-    border: "none",
-    borderRadius: "4px",
-  },
-  content: {
-    padding: "10px",
-    backgroundColor: "#fafafa",
-    border: "1px solid #ccc",
-    borderRadius: "4px",
-  },
-};
 
 export default App;
