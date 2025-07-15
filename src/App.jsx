@@ -1,6 +1,6 @@
 import './App.css';
-import menuData from "./menuData.js"; 
-import Content from "./Content.js";
+import menuData from "./menuData.jsx"; 
+import Content from "./Content.jsx";
 import React, { useState } from "react";
 
 
@@ -40,8 +40,7 @@ function App() {
       </nav>
 
       <main className="content">
-        <p>{content}</p>
-        <Content name = {content} />
+        <Content name = {content} /> 
       </main>
     </div>
   );

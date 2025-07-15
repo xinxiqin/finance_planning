@@ -21,12 +21,13 @@ const menuData = {
     },
   },
   Retirement: {
-    "Popular Age": {
-      59.5: "RetireAt59AndHalf",
-      62: "UnderConstruction",
+    "Finance Stratey": {
+      Overall: "RetireAt59AndHalf",
+      "SS Claim": "SSClaim",
     },
     Calculator: {
-        "Social Security": "UnderConstruction",
+        "SS Amount": "SSAmountCalculator",
+        "SS Claim": "SClaimCalculator",
         Medicare: "UnderConstruction",
     },
   },
@@ -37,8 +38,8 @@ const menuData = {
         Coach: "UnderConstruction",     
     },
     Pickleball: {
-        "Golf Fitness": "GolfFitness",
-        Courses: "UnderConstruction",
+        "Pickleball Fitness": "GolfFitness",
+        Courts: "UnderConstruction",
         Coach: "UnderConstruction",     
     },
     Ski: {
