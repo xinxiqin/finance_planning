@@ -1,5 +1,17 @@
 
 const menuData = {
+  Home: "Introduction",
+  Retirement: {
+    "Finance Stratey": {
+      Overall: "RetireAt59AndHalf",
+      "SS Claim": "SSClaim",
+    },
+    Calculator: {
+        "SS Amount": "SSAmountCalculator",
+        "SS Claim": "SSClaimCalculator",
+        Medicare: "UnderConstruction",
+    },
+  },
   Health: {
     Exercise: {
       Cardio: "UnderConstruction",
@@ -20,17 +32,7 @@ const menuData = {
       Retirement: "UnderConstruction",
     },
   },
-  Retirement: {
-    "Finance Stratey": {
-      Overall: "RetireAt59AndHalf",
-      "SS Claim": "SSClaim",
-    },
-    Calculator: {
-        "SS Amount": "SSAmountCalculator",
-        "SS Claim": "SClaimCalculator",
-        Medicare: "UnderConstruction",
-    },
-  },
+  
   Activity: {
     Golf: {
         "Golf Fitness": "GolfFitness",

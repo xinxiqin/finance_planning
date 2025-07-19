@@ -5,6 +5,8 @@ import GolfFitness from "./GolfFitness.jsx";
 import UnderConstruction from "./UnderConstruction.jsx";
 import SSClaim from "./SSClaim.jsx";
 import SSAmountCalculator from "./SSAmountCalculator.jsx";
+import Introduction from "./Introduction.jsx";
+import SSClaimCalculator from "./SSClaimCalculator.jsx";
 
 
 function Content({ name }) {
@@ -17,6 +19,10 @@ function Content({ name }) {
             return <SSClaim />;
         case "SSAmountCalculator":
             return <SSAmountCalculator />;
+        case "Introduction":
+            return <Introduction />;
+        case "SSClaimCalculator":
+            return <SSClaimCalculator />;
         default: 
             return <UnderConstruction />;
     }
