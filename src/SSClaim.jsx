@@ -1,3 +1,5 @@
+// import { Link } from 'react-router-dom';
+
 function SSClaim() {
   return (
     <div style={{ height: "80vh", width: "100%" }}>
@@ -5,7 +7,7 @@ function SSClaim() {
       <h3 className="text-xl font-bold mb-4">Consider at which age start to claim. 
         Claim earlier will result in more years of benefits, but lower monthly benefits.
         Claim later will result in higher monthly benefits, but fewer years of benefits.
-        Refer to claim Calculator
+        Refer to claim Calculator 
         </h3>
       <ul>
         <li>Age 62: Early retirement, reduced benefits</li>

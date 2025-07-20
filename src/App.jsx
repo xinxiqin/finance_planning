@@ -1,7 +1,11 @@
+
 import './App.css';
+// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import menuData from "./menuData.jsx"; 
 import Content from "./Content.jsx";
 import React, { useState } from "react";
+// import Introduction from './Introduction.jsx';
+// import SSClaimCalculator from './SSClaimCalculator.jsx';
 
 
 function App() {
@@ -12,7 +16,14 @@ function App() {
   };
 
   return (
+    
     <div>
+      {/* <Router>
+      <Routes>
+        <Route path="/" element={<Introduction />} />
+        <Route path="/Retirement/Calculator/SS Claim" element={<SSClaimCalculator />} />
+      </Routes>
+      </Router> */}
       <nav className="top-menu">
         {Object.entries(menuData).map(([level1, level2]) => {
           if (level1 === "Home") {

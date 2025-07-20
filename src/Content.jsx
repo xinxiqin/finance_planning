@@ -7,6 +7,7 @@ import SSClaim from "./SSClaim.jsx";
 import SSAmountCalculator from "./SSAmountCalculator.jsx";
 import Introduction from "./Introduction.jsx";
 import SSClaimCalculator from "./SSClaimCalculator.jsx";
+import IRAStrategy from "./IRAStrategy.jsx";
 
 
 function Content({ name }) {
@@ -21,6 +22,8 @@ function Content({ name }) {
             return <SSAmountCalculator />;
         case "Introduction":
             return <Introduction />;
+        case "IRAStrategy":
+            return <IRAStrategy />;
         case "SSClaimCalculator":
             return <SSClaimCalculator />;
         default: 

@@ -5,6 +5,7 @@ const menuData = {
     "Finance Stratey": {
       Overall: "RetireAt59AndHalf",
       "SS Claim": "SSClaim",
+      "IRA/401K": "IRAStrategy",
     },
     Calculator: {
         "SS Amount": "SSAmountCalculator",
