@@ -37,20 +37,13 @@ function App() {
             <div className="dropdown" key={level1}>
               <button className="dropbtn">{level1}</button>            
               <div className="dropdown-content">
-                {Object.entries(level2).map(([level2Key, level3]) => (
-                  <div className="sub-dropdown" key={level2Key}>
-                    <span className="sub-label">{level2Key} ▸</span>
-                    <div className="sub-dropdown-content">
-                      {Object.entries(level3).map(([item, description]) => (
-                        <div
-                          key={item}
-                          className="item"
-                          onClick={() => handleClick(description)}
-                        >
-                          {item}
-                        </div>
-                      ))}
-                    </div>
+                {Object.entries(level2).map(([item, description]) => (
+                  <div
+                    key={item}
+                    className="item"
+                    onClick={() => handleClick(description)}
+                  >
+                    {item}
                   </div>
                 ))}
               </div>

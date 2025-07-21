@@ -2,105 +2,75 @@
 const menuData = {
   Home: "Introduction",
   Retirement: {
-    "Finance Stratey": {
-      Overall: "RetireAt59AndHalf",
-      "SS Claim": "SSClaim",
-      "IRA/401K": "IRAStrategy",
-    },
-    Calculator: {
-        "SS Amount": "SSAmountCalculator",
-        "SS Claim": "SSClaimCalculator",
-        Medicare: "UnderConstruction",
-    },
+    "Strategy: Overall": "RetireAt59AndHalf",
+    "Strategy: SS Claim": "SSClaimCalculator",
+    "Strategy: IRA/401K": "IRAStrategy",
+    "Calculator: SS Amount": "SSAmountCalculator",
+    "Calculator: SS Claim": "SSClaimCalculator",
   },
+  
   Investments: {
-    Investing: {
-      Stocks: "UnderConstruction",
-      Bonds: "UnderConstruction",
-    },
-    Saving: {
-      Emergency: "UnderConstruction",
-      Retirement: "UnderConstruction",
-    },
+    Equity: "UnderConstruction",
+    "Fixed Income": "UnderConstruction",
   },
+
   Tax: {
-    "Tax Strategy": {
-      "Tax Bracket": "UnderConstruction",
-      "Tax Loss Harvesting": "UnderConstruction",
-      "Tax Efficient Investing": "UnderConstruction",
-    },
-    "Tax Calculator": {
-      "Income Tax": "UnderConstruction",
-      "Capital Gains Tax": "UnderConstruction",
-      "Estate Tax": "UnderConstruction",
-    },
+    "Tax Bracket": "UnderConstruction",
+    "Tax Loss Harvesting": "UnderConstruction",
+    "Tax Efficient Investing": "UnderConstruction",
+    "Income Tax": "UnderConstruction",
+    "Capital Gains Tax": "UnderConstruction",
+    "Estate Tax": "UnderConstruction",
   },
+
   Insurance: {
-    "Insurance Strategy": {
       "Life Insurance": "UnderConstruction",
       "Health Insurance": "UnderConstruction",
       "Disability Insurance": "UnderConstruction",
       "Long-Term Care Insurance": "UnderConstruction",
-    },
-    "Insurance Calculator": {
       "Life Insurance Needs": "UnderConstruction",
       "Health Insurance Costs": "UnderConstruction",
       "Disability Insurance Needs": "UnderConstruction",
       "Long-Term Care Insurance Costs": "UnderConstruction",
-    },
   },
+
   Estate: {
-    "Estate Planning": {
-      "Wills and Trusts": "UnderConstruction",
-      "Power of Attorney": "UnderConstruction",
-      "Healthcare Proxy": "UnderConstruction",
-      "Estate Taxes": "UnderConstruction",
-    },
-    "Estate Calculator": {
-      "Estate Value": "UnderConstruction",
-      "Estate Tax Liability": "UnderConstruction",
-      "Trust Funding": "UnderConstruction",
-      "Beneficiary Designations": "UnderConstruction",
-    },
+    "Wills and Trusts": "UnderConstruction",
+    "Power of Attorney": "UnderConstruction",
+    "Healthcare Proxy": "UnderConstruction",
+    "Estate Taxes": "UnderConstruction",
+    "Estate Value": "UnderConstruction",
+    "Estate Tax Liability": "UnderConstruction",
+    "Trust Funding": "UnderConstruction",
+    "Beneficiary Designations": "UnderConstruction",
   },
+
   Health: {
-    Exercise: {
-      Cardio: "UnderConstruction",
-      Strength: "UnderConstruction",
-    },
-    Nutrition: {
-      Vitamins: "UnderConstruction",
-      Hydration: "UnderConstruction",
-    },
+    Cardio: "UnderConstruction",
+    Strength: "UnderConstruction",
+    Vitamins: "UnderConstruction",
+    Hydration: "UnderConstruction",
   },
   
   
   Activity: {
-    Golf: {
-        "Golf Fitness": "GolfFitness",
-        Courses: "UnderConstruction",
-        Coach: "UnderConstruction",     
-    },
-    Pickleball: {
-        "Pickleball Fitness": "GolfFitness",
-        Courts: "UnderConstruction",
-        Coach: "UnderConstruction",     
-    },
-    Ski: {
-        "Ski Fitness": "GolfFitness",
-        Courses: "UnderConstruction",
-        Coach: "UnderConstruction",
-    },
-    Travel: {
-        "Travel Fitness": "GolfFitness",
-        Courses: "UnderConstruction",
-        Coach: "UnderConstruction",
-    },
-    Chess: {
-        "Chess Fitness": "GolfFitness",
-        Courses: "UnderConstruction",
-        Coach: "UnderConstruction",
-    },
+    "Golf: Fitness": "GolfFitness",
+    "Golf: Courses": "UnderConstruction",
+    "Golf: Coach": "UnderConstruction",     
+
+    "Pickleball: Fitness": "GolfFitness",
+    "Pickleball: Courses": "UnderConstruction",
+    "Pickleball: Coach": "UnderConstruction",   
+
+    "Ski: Fitness": "GolfFitness",
+    "Ski: Courses": "UnderConstruction",
+    "Ski: Coach": "UnderConstruction", 
+    
+    "Travel": "UnderConstruction",
+
+    "Chess: Fitness": "GolfFitness",
+    "Chess: Courses": "UnderConstruction",
+    "Chess: Coach": "UnderConstruction",     
   },
 };
 
