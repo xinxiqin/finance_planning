@@ -4,7 +4,7 @@ import TaxCalculatorDetail from "./TaxCalculatorDetail";
 function TaxCalculator() {
   return (
     <div >
-      <TaxCalculatorDetail />
+      {/* <TaxCalculatorDetail /> */}
       <TaxBracketTable />
       
     </div>
