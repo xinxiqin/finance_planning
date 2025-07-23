@@ -15,7 +15,7 @@ const menuData = {
   },
 
   Tax: {
-    "Tax Bracket": "UnderConstruction",
+    "Tax Bracket": "TaxCalculator",
     "Tax Loss Harvesting": "UnderConstruction",
     "Tax Efficient Investing": "UnderConstruction",
     "Income Tax": "UnderConstruction",

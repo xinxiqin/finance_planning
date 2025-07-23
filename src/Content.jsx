@@ -8,6 +8,7 @@ import SSAmountCalculator from "./SSAmountCalculator.jsx";
 import Introduction from "./Introduction.jsx";
 import SSClaimCalculator from "./SSClaimCalculator.jsx";
 import IRAStrategy from "./IRAStrategy.jsx";
+import TaxCalculator from "./TaxCalculator.jsx";
 
 
 function Content({ name }) {
@@ -26,6 +27,8 @@ function Content({ name }) {
             return <IRAStrategy />;
         case "SSClaimCalculator":
             return <SSClaimCalculator />;
+        case "TaxCalculator":
+            return <TaxCalculator />;
         default: 
             return <UnderConstruction />;
     }
